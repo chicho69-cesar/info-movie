@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Info Movie</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="light">
+        <header class="header" id="header">
+            <section class="header__container">
+                <h1 class="header__logo">
+                    <a href="./index.html" class="header__link">Info Movie</a>
+                </h1>
+
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link nav__link--active" id="spanish">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="html/buscar.html" class="nav__link">
+                            Buscar
+                        </a>
+                    </li>
+
+                    <button class="switch" id="switch">
+                        <span class="switch__element"><i class="fas fa-sun"></i></span>
+                        <span class="switch__element"><i class="fas fa-moon"></i></span>
+                    </button>
+                </ul>
+            </section>
+        </header>
+
+        <main class="movies"></main>
+
+        <section class="modal">
+            <img src="../assets/close.svg" class="modal__close">
+            <div class="modal__info"></div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>
