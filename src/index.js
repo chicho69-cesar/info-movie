@@ -1,5 +1,5 @@
 import { loadMovies  } from './scripts/api/loadMovies';
-import { searchMovie } from './scripts/api/searchMovies';
+import { searchMovies } from './scripts/api/searchMovies';
 import { lightBox } from './scripts/modules/lightbox';
 import { hideHeader } from './scripts/modules/hideHeader';
 import { theme } from './scripts/modules/theme';
@@ -14,5 +14,5 @@ hideHeader();
 theme();
 
 loadMovies(API, API_KEY, page);
-searchMovie(API, API_KEY);
+searchMovies(API, API_KEY);
 lightBox(API, API_KEY);

@@ -32,7 +32,7 @@ const searchInfoMovie = (API, API_KEY, search) => {
     });
 }
 
-export const searchMovie = (API, API_KEY) => {
+export const searchMovies = (API, API_KEY) => {
     if (url !== 'buscar.html') return;
 
     search.addEventListener('input', () => {
