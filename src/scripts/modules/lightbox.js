@@ -7,10 +7,12 @@ let modal = $('.modal');
 let infoContainer = $('.modal__info');
 
 const showInfo = (API, API_KEY, id) => {
-    console.log('showInfo llega');
     searchMovie(API, API_KEY, id);
-    modal.classList.toggle('modal__show');
-    infoContainer.classList.toggle('modal__showInfo');
+
+    modal.classList.add('modal__show');
+    modal.classList.remove('modal__hidde');
+    infoContainer.classList.add('modal__showInfo');
+    infoContainer.classList.remove('modal__hiddeInfo');
 }
 
 export const lightBox = (API, API_KEY) => {
@@ -22,7 +24,9 @@ export const lightBox = (API, API_KEY) => {
     });
     
     close.addEventListener('click', () => {
-        modal.classList.toggle('modal__show');
-        infoContainer.classList.toggle('modal__showInfo');
+        modal.classList.add('modal__hidde');
+        modal.classList.remove('modal__show');
+        infoContainer.classList.add('modal__hiddeInfo');
+        infoContainer.classList.remove('modal__showInfo');
     });
 }

@@ -6,7 +6,7 @@ import { theme } from './scripts/modules/theme';
 import './styles/styles.css';
 
 const API = 'https://api.themoviedb.org/3/';
-const API_KEY = '5b10cc3f5c9bf78fd803aa65ec24ef7d';
+const API_KEY = 'Tu api Key';
 
 let page = 1;
 
